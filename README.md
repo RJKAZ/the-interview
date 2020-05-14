@@ -1,2 +1,0 @@
-# The-Interview
-Final Project
