@@ -110,7 +110,8 @@ const spe7 = require('./sounds/perfectEnding5Matt.wav');
 //speaker
 const m = "Matt";
 const j = "Jerry Duva";
-const b = "The Boss!"
+const b = "The Boss!";
+const n = "Narrator";
 
 let story = [
    {
@@ -135,7 +136,7 @@ let story = [
      sprite: p4,
      speaker: m,
      voice: s4,
-     text: "The owner was behind on payments...many payments."
+     text: "So yeah...the boss she kind of owed some money to the Mob, and she couldn't pay it back...and...."
    },
    {
     sprite: p5,
@@ -147,25 +148,25 @@ let story = [
      sprite: p5,
      speaker: m,
      voice: s5,
-     text: "So they torched the place."
+     text: "So they ending up torching the place."
    },
    {
      sprite: p6,
      speaker: m,
      voice: s6,
-     text: "which left me now joining the ranks of the unemployed.",
+     text: "and left me unemployed.",
    },
    {
     sprite: p6,
     speaker: m,
-    text: "which left me now joining the ranks of the unemployed.",
+    text: "and left me unemployed.",
     soundEffect: s6s,
   },
    {
      sprite: p7,
      speaker: m,
      voice: s7,
-     text: "While I was at the unemployement office contempating what to do with my life now, something caught my eye."
+     text: "So then off the unemployment office it was with me, contempating what to do with my life now, but then something caught my eye."
    },
    {
      sprite: p8,
@@ -193,19 +194,19 @@ let story = [
      sprite: p11,
      speaker: m,
      voice: s11,
-     text: "Quite literally acutally....but I wasn't even using the damn thing anyway"
+     text: "Quite literally actually....but I wasn't even using that darn thing anyway"
    },
    {
      sprite: p12,
      speaker: m,
      voice: s12,
-     text: "So I started the bootcamp.... and studied my ass off for 6 months into the intricate syntax and art of HTML, CSS, Javascript, Node, Express, MySQL, & React."
+     text: "So I started the bootcamp.... and studied like crazy for 6 months. Learning everything about HTML, CSS, Javascript, Node, Express, MySQL, & React.....and so much more."
    },
    {
     sprite: p13,
     speaker: m,
     voice: s13,
-    text: "It was overwhelming....I think I literally fried my brain.....what the hell did I get myself into?"
+    text: "It was overwhelming....I think I literally fried my brain.....what the heck did I get myself into?"
   },
   {
     sprite: p14,
@@ -223,7 +224,7 @@ let story = [
      sprite: p16,
      speaker: m,
      voice: s16,
-     text: "AND OH MY GOD I'M FREAKING THE HELL OUT!!!!!........I don't think I've ever been this nervious"
+     text: "AND OH MY GOD I'M FREAKING THE HECK OUT!!!!!........I don't think I've ever been this nervious"
    },
    {
      sprite: p17,
@@ -235,7 +236,7 @@ let story = [
      sprite: p18,
      speaker: m,
      voice: s18,
-     text: "oh shit...they're ready for me....come on Matt....put on your game face and get this job!"
+     text: "oh darn...they're ready for me already....come on Matt....put on your game face and get this job!"
    },
    {
      sprite: p19,
@@ -262,7 +263,7 @@ let story = [
     sprite: q1,
     speaker: j,
     voice: sq3,
-    text: "so matt.. we Looked over your resume and I think you might be perfect for our junior developer opening. But we just have a few technical questions we like to ask you....just a formality.",
+    text: "so Matt.. we Looked over your resume and I think you might be perfect for our junior developer opening. But we just have a few technical questions we like to ask you....just a formality.",
     receiveJump: "startOfQuiz",  
   },
   {
@@ -340,20 +341,20 @@ let story = [
     sprite: he1,
     speaker: b,
     voice: she1,
-    text: "GET THE HELL OUT OF MY OFFICE YOU HACK YOU DON'T KNOW SHIT ABOUT CODING!!!!!"
+    text: "GET THE HECK OUT OF MY OFFICE YOU HACK YOU DON'T KNOW ANYTHING ABOUT CODING!!!!!"
   },
   {
     sprite: he2,
     speaker: b,
     voice: she2,
-    text: "YOU WASTED 6 MONTHS AND LEARNED JACK SHIT! WHICH IS ALL YOU'LL EVER BE!!!!!"
+    text: "YOU WASTED 6 MONTHS AND LEARNED NOTHING! AND THATS ALL YOU'RE EVER GONNA BE....A NOTHING!!!!!"
     
   },
   {
     sprite: he3,
     speaker: b,
     voice: she3,
-    text: "AND YOU WASTED MY PRECIOUS TIME! YOU'LL NEVER GET BETTER THEN A DEAD END JOB!!! NOW GET THE FUCK OUT!!!!!!!"
+    text: "AND YOU'LL NEVER GET MORE THEN A DEAD END JOB! NOW YOU'VE WASTED ENOUGH OF MY PRECIOUS TIME, GET THE HECK OUT!!!!!!!"
   },
   {
     sprite: he4,
@@ -438,6 +439,7 @@ let story = [
 
   {
     sprite: ep,
+    speaker: n,
     receiveJump: "skitDone",
     text: "thanks for playing! Replay for the alternate endings",
     jumpTo: "title-screen",

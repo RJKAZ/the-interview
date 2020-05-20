@@ -7,6 +7,7 @@ import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 import UserInfoContext from '../utils/UserInfoContext';
 import AuthService from '../utils/auth';
+import landingimage from '../story/sprites/landingPageResized.jpg';
 
 function TitleScreen(props) {
    // set modal display state
@@ -15,7 +16,7 @@ function TitleScreen(props) {
    const { username } = useContext(UserInfoContext);
   return (
    <>
-     <Navbar bg='dark' variant='dark' expand='lg'>
+     <Navbar bg='white' variant='white' expand='lg'>
         <Container fluid>
          
           <Navbar.Toggle aria-controls='navbar' />
@@ -67,11 +68,13 @@ function TitleScreen(props) {
 
 
     <div className="overlay" id="title-overlay">
+      <img
+      src={landingimage}
+      />
       <div id="title-screen-header">
-        <div id="title">THE INTERVIEW!</div>
         <ul id="menu">
           <li>
-            <span onClick={props.beginStory}>Begin Story</span>
+            <span onClick={props.beginStory}>Begin The Story from the Start!</span>
           </li>
           <li>
             <span onClick={props.goToInterview}>Just head to the Interview!</span>

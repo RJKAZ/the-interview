@@ -7,10 +7,11 @@
 
 .overlay .choice-button {
   font-size: 26px;
+  font-weight: bold;
   width: 750px;
   margin: 30px auto;
   border-radius: 25px;
-  background-color: #1d75a5;
+  background-color: #cf0000;
   border: none;
   color: white;
   padding: 12px 0px;
@@ -29,7 +30,7 @@
 /* Add a background color on hover */
 .overlay-choices input:hover {
   background-color: white;
-  color: #1d75a5;
+  color: #cf0000;
 }
 
 

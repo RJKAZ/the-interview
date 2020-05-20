@@ -3,10 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 
-#title-overlay {
-  background: #eee
-    url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
-}
+
 
 #title-screen-header {
   position: absolute;
@@ -14,7 +11,15 @@
   left: 50%;
   transform: translate(-50%, -75%);
   width: 100%;
+  
 }
+
+#background-image {
+  height: auto;
+  max-width: 75%;
+  max-height: 75%;
+}
+
 #logo {
   width: 100%;
   text-align: center;
@@ -35,8 +40,6 @@
   list-style: none;
   margin: 0 0 100px 0;
   padding: 32px 0;
-  border-top: 4px double #aaa;
-  border-bottom: 4px double #aaa;
   position: relative;
   text-align: center;
 }
@@ -44,15 +47,16 @@
   cursor: pointer;
   display: inline-block;
   width: 303px;
-  margin: -8px 10px 0px;
+  margin: -60px 10px 0px;
   position: relative;
-  -webkit-transform: skewy(-3deg);
+  -webkit-transform: skewy(-0deg);
   -webkit-backface-visibility: hidden;
   -webkit-transition: 200ms all;
 }
 #menu li span {
   text-transform: uppercase;
   font-family: "Squada One", cursive;
+  border-radius: 25px;
   font-weight: 800;
   display: block;
   background: #fff;
@@ -63,23 +67,8 @@
   text-decoration: none;
   position: relative;
   z-index: 1;
-  text-shadow: 1px 1px 0px #fff, 2px 2px 0px #999, 3px 3px 0px #fff;
-  background-image: -webkit-linear-gradient(
-    top,
-    transparent 0%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
-  -webkit-transition: 1s all;
-  background-image: -webkit-linear-gradient(
-    left top,
-    transparent 0%,
-    transparent 25%,
-    rgba(0, 0, 0, 0.15) 25%,
-    rgba(0, 0, 0, 0.15) 50%,
-    transparent 50%,
-    transparent 75%,
-    rgba(0, 0, 0, 0.15) 75%
-  );
+  
+  
   background-size: 4px 4px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4) inset,
     0 0 20px -5px rgba(0, 0, 0, 0.4), 0 0 0px 3px #fff inset;
@@ -88,19 +77,9 @@
   width: 320px;
 }
 #menu span:hover {
-  color: #d90075;
+  color: #0694f3;
 }
-#menu li:after,
-#menu li:before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  background: #bbb;
-  -webkit-transform: skewY(8deg);
-  x-index: -3;
-  border-radius: 4px;
-}
+
 #menu li:after {
   background-image: -webkit-linear-gradient(
     left,

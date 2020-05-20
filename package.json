@@ -9,7 +9,6 @@
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "heroku-postbuild": "cd client && npm run build"
-    
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,9 @@
   },
   "homepage": "https://github.com/RJKAZ/googlebooks-app#readme",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "bootstrap": "^4.5.0",
+    "if-env": "^1.0.4",
+    "react-bootstrap": "^1.0.1"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"

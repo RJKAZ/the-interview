@@ -3,6 +3,10 @@ import Sound from "react-sound";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Fullscreen from "react-full-screen";
 import WheelReact from "wheel-react";
+import { Link } from 'react-router-dom';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+
+
 // API
 import story from "./story/story";
 import choices from "./story/choices";
@@ -225,7 +229,7 @@ class App extends Component {
       titleScreenShown: false,
       frameIsRendering: true,
     });
-    this.setFrame(22);
+    this.setFrame(25);
     this.setState({
       choicesIndex: 0,
       choiceOptions: choices[0].choices
@@ -284,6 +288,7 @@ class App extends Component {
 
     return (
       <div>
+       <h1>The Interview Visual Novel</h1>
          
       </div>,
       
