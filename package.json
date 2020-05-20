@@ -1,5 +1,5 @@
 {
-  "name": "googlebooks-app",
+  "name": "the-interview",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RJKAZ/googlebooks-app.git"
+    "url": "git+https://github.com/RJKAZ/the-interview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RJKAZ/googlebooks-app/issues"
+    "url": "https://github.com/RJKAZ/the-interview"
   },
-  "homepage": "https://github.com/RJKAZ/googlebooks-app#readme",
+  "homepage": "https://github.com/RJKAZ/the-interview",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "if-env": "^1.0.4",

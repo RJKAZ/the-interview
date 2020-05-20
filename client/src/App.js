@@ -29,7 +29,7 @@ import "./styles/titlescreen.css";
 import "./styles/transitions.css";
 
 const INITIAL_STATE = {
-  bgmVolume: 80,
+  bgmVolume: 40,
   soundEffectVolume: 90,
   voiceVolume: 100,
   font: "Trebuchet MS",
@@ -229,7 +229,7 @@ class App extends Component {
       titleScreenShown: false,
       frameIsRendering: true,
     });
-    this.setFrame(25);
+    this.setFrame(26);
     this.setState({
       choicesIndex: 0,
       choiceOptions: choices[0].choices

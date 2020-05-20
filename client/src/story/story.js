@@ -1,6 +1,7 @@
 //importing the sprites/panel images
 const p1 = require("./sprites/the_interview_page 1.jpg");
 const p2 = require("./sprites/the_interview_page_2.jpg");
+const p2a = require("./sprites/the_interview_page_2a.jpg")
 const p3 = require("./sprites/the_interview_page_3.jpg");
 const p4 = require("./sprites/the_interview_page_4.jpg");
 const p5 = require("./sprites/the_interview_page_5.jpg");
@@ -37,6 +38,7 @@ const pe2 = require("./sprites/perfectEnding2.jpg");
 const pe3 = require("./sprites/perfectEnding3.jpg");
 const pe4 = require("./sprites/perfectEnding4.jpg");
 const pe5 = require("./sprites/perfectEnding5.jpg");
+const pe6 = require("./sprites/perfectEnding6.jpg");
 
 const he1 = require("./sprites/horriableEnding1.jpg");
 const he2 = require("./sprites/horriableEnding2.jpg");
@@ -46,13 +48,17 @@ const he5 = require("./sprites/horriableEnding5.jpg");
 
 const ep = require('./sprites/theEnd.jpg');
 
+const soprano = require("./bgm/The-Sopranos-theme-song (mp3cut.net).mp3");
+const nomusic = require("./bgm/emptybgm.mp3");
+
 
 
 
 
 //importing the sounds
-const s1 = require("./sounds/panel_1.wav");
-const s2 = require("./sounds/panel_2.wav");
+const s1 = require("./sounds/panel_1orig.wav");
+const s2 = require("./sounds/panel_2a.wav");
+const s2a = require("./sounds/panel_2b.wav");
 const s3 = require("./sounds/panel_3.wav");
 const s4 = require("./sounds/panel_4.wav");
 const s5 = require("./sounds/panel_5.wav");
@@ -124,8 +130,14 @@ let story = [
      sprite: p2,
      speaker: m,
      voice: s2,
-     text: "I used to be the manager of a local Italian restaurant....it was a great job and I loved working there. Then one day the owner of the restaurant started getting really nervious....I didn't know why...."
+     text: "I used to be the manager of a local Italian restaurant....it was a great job and I loved working there!"
    },
+   {
+    sprite: p2a,
+    speaker: m,
+    voice: s2a,
+    text: "Then one day the owner of the restaurant, she started getting really nervious all the sudden....I didn't know what was wrong...."
+  },
    {
      sprite: p3,
      speaker: m,
@@ -212,7 +224,7 @@ let story = [
     sprite: p14,
     speaker: m,
     voice: s14,
-    text: "But I stuck with it....and.....6 months later I graduated."
+    text: "But I stuck with it, and 6 months later.... I graduated!"
   },
   {
     sprite: p15,
@@ -429,8 +441,14 @@ let story = [
     voice: spe6,
     text: "Hey Matt..now that you've been here long enough, I want to introduce you to some of your fellow associates!"
   },
+  { sprite: pe5,
+    speaker: b,
+    voice: spe6,
+    bgm: soprano,
+    text: "...."
+  },
   {
-    sprite: pe5,
+    sprite: pe6,
     speaker: m,
     voice: spe7,
     text: "THE MOB.... my jobs a front for the Mob!.",
@@ -440,6 +458,7 @@ let story = [
   {
     sprite: ep,
     speaker: n,
+    bgm: nomusic,
     receiveJump: "skitDone",
     text: "thanks for playing! Replay for the alternate endings",
     jumpTo: "title-screen",
